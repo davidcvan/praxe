@@ -1,6 +1,4 @@
 import matplotlib.pyplot as plt
-lines = []
-dict = {}
 
 def opening(name):
     with open(name,"r") as f:
@@ -27,6 +25,10 @@ def draw_graph(file_name):
     plt.legend()
     plt.show()
 
-opening("./data/fabric8-analytics-worker.coverage.0.txt" )
-opening("./data/fabric8-analytics-worker.coverage.1.txt" )
+lines = []
+files = ["./data/fabric8-analytics-worker.coverage.0.txt","./data/fabric8-analytics-worker.coverage.1.txt","./data/fabric8-analytics-worker.coverage.2.txt","./data/fabric8-analytics-worker.coverage.3.txt"]
+
+for file in files:
+    opening(file)
+
 draw_graph("/f8a_worker/f8a_worker/base.py")
