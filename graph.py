@@ -17,7 +17,7 @@ def draw_graph(file_name):
             x_axis.append(lines[i][0])
         elif lines[i][0] == file_name:
             loc.append(int(lines[i][1]))
-            tested_loc.append(int(lines[i][2]))
+            tested_loc.append(int(lines[i][1]) - int(lines[i][2]))
     print(x_axis, loc, tested_loc)
     plt.title(file_name)
     plt.plot(x_axis, loc, label = "loc")
