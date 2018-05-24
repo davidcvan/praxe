@@ -23,6 +23,7 @@ def draw_graph(file_name):
     plt.plot(x_axis, loc, label = "loc")
     plt.plot(x_axis,tested_loc, label = "tested_loc")
     plt.legend()
+    plt.savefig(file_name.replace("/","_")+".png")
     plt.show()
 
 lines = []
@@ -31,4 +32,4 @@ files = ["./data/fabric8-analytics-worker.coverage.0.txt","./data/fabric8-analyt
 for file in files:
     opening(file)
 
-draw_graph("/f8a_worker/f8a_worker/base.py")
+draw_graph("/f8a_worker/f8a_worker/workers/victims.py")
