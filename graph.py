@@ -14,6 +14,8 @@ def draw_graph(file_name):
     tested_loc = []
     for i in range(len(lines)):
         if len(lines[i])==1:
+            for char in lines[i][0]:
+                print(lines[i][0].find("/"))
             x_axis.append(lines[i][0])
         elif lines[i][0] == file_name:
             loc.append(int(lines[i][1]))
@@ -32,4 +34,6 @@ files = ["./data/fabric8-analytics-worker.coverage.0.txt","./data/fabric8-analyt
 for file in files:
     opening(file)
 
-draw_graph("/f8a_worker/f8a_worker/workers/victims.py")
+for file in lines:
+    if len(file) > 1:
+        draw_graph(file[0])
