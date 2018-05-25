@@ -9,3 +9,5 @@ with open("./fabric8-analytics.github.io/logs.txt","r") as f:
             lines.append(splitted_line)
     f.close()
 print(lines, len(lines))
+hash = lines[0][0]
+os.system("cd ./fabric8-analytics.github.io; git checkout %s"% (hash))
