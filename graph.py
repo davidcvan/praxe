@@ -16,8 +16,8 @@ def draw_graph(file_name):
         if len(lines[i])==1:
             name = lines[i][0].split("/")
             print(name)
-            x_axis.append(name[-1])
         elif lines[i][0] == file_name:
+            x_axis.append(name[-1])
             loc.append(int(lines[i][1]))
             tested_loc.append(int(lines[i][1]) - int(lines[i][2]))
     print(x_axis, loc, tested_loc)
