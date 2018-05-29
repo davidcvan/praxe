@@ -26,7 +26,6 @@ def draw_graph(file_name):
     for i in range(len(cs)):
         if file_name==cs[i]:
             contr = True
-    print(cs)
     if contr != True:
         cs.append(file_name)
         plt.title(file_name)

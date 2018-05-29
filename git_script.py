@@ -11,6 +11,7 @@ def opening():
             splitted_line = line.split()
             if splitted_line[1] == "Dashboard" and len(splitted_line) == 3:
                 commits.append(splitted_line)
+        commits.reverse()
         f.close()
     print(commits, len(commits))
 
@@ -24,7 +25,7 @@ def checkout():
 
 opening()
 checkout()
-print(len(graph.lines))
 for file in graph.lines:
     if len(file) > 1:
         graph.draw_graph(file[0])
+
