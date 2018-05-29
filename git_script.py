@@ -28,11 +28,3 @@ print(len(graph.lines))
 for file in graph.lines:
     if len(file) > 1:
         graph.draw_graph(file[0])
-
-
-'''
-        graph.opening(file)
-    else:
-        print(os.listdir("fabric8-analytics.github.io/dashboard/"))
-print(graph.lines)
-'''

@@ -46,12 +46,3 @@ def draw_graph(file_name):
 
 cs = []
 lines = []
-'''
-files = ["./data/fabric8-analytics-worker.coverage.0.txt","./data/fabric8-analytics-worker.coverage.1.txt","./data/fabric8-analytics-worker.coverage.2.txt","./data/fabric8-analytics-worker.coverage.3.txt"]
-for file in files:
-    opening(file)
-
-for file in lines:
-    if len(file) > 1:
-        draw_graph(file[0])
-'''
