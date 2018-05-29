@@ -1,0 +1,52 @@
+----------------------------------------------------
+Running Python linter against following directories:
+recommendation_engine locustfiles deployment tests
+----------------------------------------------------
+
+Using base prefix '/usr'
+New python executable in /home/ptisnovs/bayesian/fabric8-analytics-common/dashboard/fabric8-analytics-npm-insights/venv/bin/python3
+Not overwriting existing python script /home/ptisnovs/bayesian/fabric8-analytics-common/dashboard/fabric8-analytics-npm-insights/venv/bin/python (you must use /home/ptisnovs/bayesian/fabric8-analytics-common/dashboard/fabric8-analytics-npm-insights/venv/bin/python3)
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter /home/ptisnovs/bayesian/fabric8-analytics-common/dashboard/venv/bin/python3
+Requirement already satisfied: pycodestyle in ./venv/lib/python3.6/site-packages (2.4.0)
+recommendation_engine/predictor/abstract_recommender.py
+    Pass
+recommendation_engine/predictor/__init__.py
+    Pass
+recommendation_engine/predictor/online_recommendation.py
+    Pass
+recommendation_engine/flask_predict.py
+    Pass
+recommendation_engine/data_store/__init__.py
+    Pass
+recommendation_engine/data_store/local_filesystem.py
+    Pass
+recommendation_engine/data_store/abstract_data_store.py
+    Pass
+recommendation_engine/data_store/s3_data_store.py
+    Pass
+recommendation_engine/utils/__init__.py
+    Pass
+recommendation_engine/utils/fileutils.py
+    Pass
+recommendation_engine/__init__.py
+    Pass
+recommendation_engine/config/params_scoring.py
+    Pass
+recommendation_engine/config/cloud_constants.py
+    Pass
+recommendation_engine/config/__init__.py
+    Pass
+recommendation_engine/config/path_constants.py
+    Pass
+recommendation_engine/model/__init__.py
+    Pass
+recommendation_engine/model/pmf_prediction.py
+    Pass
+locustfiles/locustfile.py
+    Pass
+deployment/submit_emr_job.py
+    Pass
+tests/unit_tests/test_PMFRecommendation.py
+    Pass
+All checks passed
