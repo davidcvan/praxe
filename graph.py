@@ -39,9 +39,11 @@ def draw_graph(file_name):
         plt.xticks(size=7)
         plt.yticks(size=10)
         plt.xticks(x_axis, rotation='vertical')
-        plt.savefig(file_name.replace("/", "_") + ".png")
         plt.legend()
-        plt.show()
+        plt.savefig(file_name.replace("/", "_") + ".png")
+        #plt.show()
+        plt.close()
+
 
 
 cs = []
