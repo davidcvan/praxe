@@ -2,7 +2,8 @@ import os
 import graph
 
 commits = []
-file = "fabric8-analytics.github.io/dashboard/f8a-server-backbone.coverage.txt"
+#/home/mjakub/praxe/fabric8-analytics.github.io/dashboard/f8a-server-backbone.coverage.txt
+file = input("File path: ")
 
 
 def opening():
@@ -21,7 +22,7 @@ def opening():
 
 def checkout():
     for commit in commits:
-        os.system("cd ./fabric8-analytics.github.io; git checkout %s" %
+        os.system("cd fabric8-analytics.github.io; git checkout %s" %
                   (commit[0]))
         print(os.path.exists(file))
         if os.path.exists(file):
