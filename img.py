@@ -63,9 +63,10 @@ while play:
         score += 1
 
 
+
     elif ball_y > 1000 and ball_y < 1020:
         if ball_x < x or ball_x >x+150:
             play = False
-            print("score: " + str(score))
+    Display.blit(pygame.font.SysFont('Arial', 30).render('Score: ' + str(score), True, (0, 0, 0)), (200, 200))
     pygame.display.update()
     clock.tick(60)
